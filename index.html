@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400&display=swap');
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="Description" content="News about the sports around the world and a variety of players of sports.">
+        <meta name="Authors" content="Bruno Philippsen, Diony Rinker e Neytan Belisário.">
+        <meta name="keywords" content="News, sports, basketball, formula1, football, soccer.">
+        <title>NDBNEWS</title>
+        <script src="https://kit.fontawesome.com/f6df8b84c1.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+    </style>
+    <body>
+        <header class= "cabecalho">
+            <ul class="menuSanduiche">
+                <li><a class="menuItem" href="index.html">Home</a></li>
+                <li><a class="menuItem" href="futebol.html">Futebol</a></li>
+                <li><a class="menuItem" href="basquete.html">Basquete</a></li>
+                <li><a class="menuItem" href="formula1.html">Fórmula 1</a></li>
+                <li><a class="menuItem" href="calendario.html">Calendário</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">
+                <i id="menu" class="fa-solid fa-bars"></i>
+                <i id="x" class="fa-solid fa-x"></i>
+            </button>
+            <div class="logocabecalho">
+                <img src="imgs/logoazul.png">
+            </div>
+            <div id="botoesprincipal" class="botoes">
+                <button class="botaocadastro" type="button"><a href="cadastro.html"> CADASTRO </button></a>
+                <button class="botaologin" type="button" ><a href="login.html" > LOGIN </button></a>
+            </div>
+        </header>
+        <p class="fundoMenu">.</p>
+        <div class="fundobotaopesquisa">
+            <br>
+            <div id="botaopesquisaprincipal" class="botaopesquisa">
+                <i id="pesquisalogoprincipal" class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisa...">
+            </div>
+        </div>
+        
+        <!-- banner -->
+            
+        <div class="slider">
+           <div class="slides">
+                <!-- radios -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                 <!-- imagens slides -->
+                <div class="slide first">
+                    <img src="imgs/andreecano.webp" alt="Dois jogadores do Fluminense Football Club utilizando camisetas tricolores com as cores verde, vermelha e branca em um estádio de futebol comemorando o gol de seu time com os braços levantados.">
+                </div>
+                <div class="slide">
+                    <img src="imgs/edudracena.webp" alt="Dois jogadores de futsal com camisetas brancas e azuis realizando uma disputa de bola em uma quadra de futsal com um fundo de arquibancadas em que poucas pessoas estão presentes.">
+                </div>
+                <div class="slide">
+                    <img src="imgs/fluminensexolimpia.webp" alt="Dois jogadores do Fluminense Football Club utilizando camisetas tricolores com as cores verde, vermelha e branca lado a lado em um estádio de futebol comemorando o gol de seu time com os braços levantados, onde o jogador posicionado à esquerda da imagem está utilizando a bracadeira de capitão do clube, que possui a cor verde neon.">
+                </div>
+                <div class="slide">
+                    <img src="imgs/ValenciaComemorando.webp" alt="Jogador do Sport Club Internacional utilizando uma camiseta vermelha do clube e calçao branco do clube com o número 13 apontando para o céu como forma de comemoração de seu gol, onde no fundo aparecem arquibancadas do estádio junto de faixas da torcida.">
+                </div>
+            <!-- fim imagens -->
+            <!-- navigation -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+        </div>
+        <!-- fim banner -->
+
+        <div class="conteudo">
+            <div class="principaisnoticias">
+                <h3>Principais noticias</h3>
+                <div class="noticias">
+                    <div class="imagemJames">
+                        <img src="imgs/James Harden.jpg" alt="Jogador do Philadelphia 76ers utilizando o uniforme branco da franquia com o número 1, posicionado ao centro de uma quadra de basquete com as mãos na cintura.">
+                        <figcaption>JAMES HARDEN PODE ESTAR A CAMINHO DO HOUSTON ROCKETS</figcaption>
+                    </div>
+                    <div class="luiscastro">
+                        <img src="imgs/Luis castro.webp" alt="Técnico do Botafogo de Futebol e Regatas utilizando uma jaqueta da cor preta com o escudo do clube, apontando para sua frente com fundo de vegetações verdes.">
+                        <figcaption>LUIS CASTRO PRECISA DECIDIR ENTRE BOTAFOGO E AL-NASSR</figcaption>
+                    </div>
+                    <div class="danielricciardo">
+                        <img src="imgs/Daniel Ricciardo.webp" alt="Piloto de Fórmula 1 olhando para a câmera sorridente utilizando uma camiseta preta da escuderia Red Bull Racing.">
+                        <figcaption>RICCIARDO PODE SER A ESCOLHA CERTA PARA SUBSTITUIR PEREZ </figcaption>
+                    </div>
+                </div>
+            </div>
+            <div class="menubaixo">
+                <div class="menulateralprincipal">
+                    <h3>Mais notícias</h3>
+                    <div class="noticiaslateral">
+                        <div class="Hamilton">
+                            <img src="imgs/Hamilton.jpg" alt="Piloto de Fórmula 1 utilizando um macacão da cor preta da equipe Mercedes-AMG Petronas Motorsport olhando para a câmera com a mão na gola de sua vestimenta em um fundo branco.">
+                            <figcaption>HAMILTON E MERCEDES CONTINUARÃO JUNTOS</figcaption>
+                        </div>
+                        <div class="Havertz">
+                            <img src="imgs/havertz.jpg" alt="Jogador de futebol sorrindo e utilizando a camiseta vermelha e branca do Arsenal Football Club em um fundo branco.">
+                            <figcaption>ARSENAL ANUNCIA A CONTRATAÇÃO DE HAVERTZ</figcaption>
+                        </div>
+                        <div class="nikolaVocevic">
+                            <img src="imgs/Nikola vocevic.jpg" alt="Jogador de basquete utilizando o uniforme branco com detalhes vermelhos do Chicago Bulls realizando movimentos de corrida em uma quadra de basquete.">
+                            <figcaption>NIKOLA VOCEVIC SERÁ NOVO JOGADOR DOS BULLS</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footerPP">
+            <p>ndbnews@gmail.com</p>
+            <br>
+            <p>Avenida São João,Vila Joana - Jundiaí,SP - 13216000</p>
+            <div class="redessociais">
+                <a id="twittericon" href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                <a id="instagramicon" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a id="facebookicon" href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NDBNEWS</title>
+    <script src="https://kit.fontawesome.com/f6df8b84c1.js" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="javascript2.js"></script> -->
+    <script type = "text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <header class= "cabecalho">
+        <ul class="menuSanduiche">
+            <li><a class="menuItem" href="index.html">Home</a></li>
+            <li><a class="menuItem" href="futebol.html">Futebol</a></li>
+            <li><a class="menuItem" href="basquete.html">Basquete</a></li>
+            <li><a class="menuItem" href="formula1.html">Fórmula 1</a></li>
+            <li><a class="menuItem" href="calendario.html">Calendário</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMenu()">
+            <i id="menu" class="fa-solid fa-bars"></i>
+            <i id="x" class="fa-solid fa-x"></i>
+        </button>
+        <div class="logocabecalho">
+            <a href="index.html"><img src="imgs/logoazul.png"></a>
+        </div>
+        <div id="botoesprincipal" class="botoes">
+            <i id="userCalender" class="fa-solid fa-user"></i>
+        </div>
+    </header>
+    <p class="fundoMenu">.</p>
+    <h3 style="display: flex; font-family: geologica; justify-content: center; align-items: center; margin-top: 5vh;">ESCOLHA QUAL TIME VOCÊ DESEJA VER O CALENDÁRIO</h3>
+    <div class="imgsTimes">        
+        <img id="americaLogo" src="imgs/americaMineiro.png" onclick="MostrarAgenda('JogosAmerica')">
+        <img id="atleticoLogo" src="imgs/Atletico.jpg" onclick="MostrarAgenda('JogosAtletico')">
+        <img id="athleticoLogo" src="imgs/Athletico pr.jpg" onclick="MostrarAgenda('JogosAthletico')">
+        <img id="bahiaLogo" src="imgs/bahia.jpg" onclick="MostrarAgenda('JogosBahia')">
+        <img id="botafogoLogo" src="imgs/Botafogo.jpg" onclick="MostrarAgenda('JogosBotafogo')">
+        <img id="bragantinoLogo" src="imgs/bragantino.png" onclick="MostrarAgenda('JogosBragantino')">
+        <img id="corinthiansLogo" src="imgs/corinthians.jpg" onclick="MostrarAgenda('JogosCorinthians')">
+        <img id="coritibaLogo" src="imgs/coritiba.jpg" onclick="MostrarAgenda('JogosCoritiba')">
+        <img id="cruzeiroLogo" src="imgs/cruzeiro.webp" onclick="MostrarAgenda('JogosCruzeiro')">
+        <img id="cuiabaLogo" src="imgs/cuiaba.png" onclick="MostrarAgenda('JogosCuiaba')">
+        <img id="flamengoLogo" src="imgs/flamengo.png" onclick="MostrarAgenda('JogosFlamengo')">
+        <img id="fluminenseLogo" src="imgs/fluminense.png" onclick="MostrarAgenda('JogosFluminense')">
+        <img id="fortalezaLogo" src="imgs/fortaleza.png" onclick="MostrarAgenda('JogosFortaleza')">
+        <img id="goiasLogo" src="imgs/goias.png" onclick="MostrarAgenda('JogosGoias')">
+        <img id="gremioLogo" src="imgs/gremio.gif" onclick="MostrarAgenda('JogosGremio')">
+        <img id="interLogo" src="imgs/inter.png" onclick="MostrarAgenda('JogosInter')">
+        <img id="palmeirasLogo" src="imgs/palmeiras.webp" onclick="MostrarAgenda('JogosPalmeiras')">
+        <img id="santosLogo" src="imgs/santos.png" onclick="MostrarAgenda('JogosSantos')">
+        <img id="saoPauloLogo" src="imgs/saoPaulo.png" onclick="MostrarAgenda('JogosSaoPaulo')">
+        <img id="vascoLogo" src="imgs/vasco.png" onclick="MostrarAgenda('JogosVasco')">
+    </div>
+    <div class="jogos">
+        <div class="JogosAmerica">
+            <div class="jogo1">
+                <h3>SUDAMERICANA</h3>
+                <h3>24.08.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img src="imgs/americaMineiro.png" > <h3>X</h3> <img style="width: 5.3vw;" src="imgs/fortaleza.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img src="imgs/americaMineiro.png" > <h3>X</h3> <img style="width: 5.7vw;" src="imgs/saoPaulo.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>SUDAMERICANA</h3>
+                <h3>31.08.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img src="imgs/americaMineiro.png" > <h3>X</h3> <img style="width: 5.3vw;" src="imgs/fortaleza.png">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img src="imgs/americaMineiro.png" > <h3>X</h3> <img style="width: 5.8vw;" src="imgs/santos.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>15.09.2023 - 20:00</h3>
+                <div class="confronto">
+                    <img src="imgs/americaMineiro.png" > <h3>X</h3> <img src="imgs/cuiaba.png">
+                </div>
+            </div>
+        </div>
+        <div class="JogosAtletico">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img src="imgs/Atletico.jpg" > <h3>X</h3> <img style="width: 5.8vw;" src="imgs/santos.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>02.09.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img src="imgs/Atletico.jpg" > <h3>X</h3> <img style="width: 6vw;" src="imgs/Athletico pr.jpg">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>16.09.2023 - 21:00</h3>
+                <div class="confronto">
+                    <img src="imgs/Atletico.jpg" > <h3>X</h3> <img style="width: 6.6vw;" src="imgs/Botafogo.jpg">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>21.09.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img src="imgs/Atletico.jpg" > <h3>X</h3> <img src="imgs/cuiaba.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img src="imgs/Atletico.jpg" > <h3>X</h3> <img style="width: 6.7vw;" src="imgs/inter.png">
+                </div>
+            </div>
+        </div>
+        <div class="JogosAthletico">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/Athletico pr.jpg" > <h3>X</h3> <img style="width: 5.5vw;" src="imgs/fluminense.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>02.09.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/Athletico pr.jpg" > <h3>X</h3> <img src="imgs/Atletico.jpg">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>13.09.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/Athletico pr.jpg" > <h3>X</h3> <img style="width: 5.9vw;" src="imgs/flamengo.png">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>21.09.2023 - 19:30</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/Athletico pr.jpg" > <h3>X</h3> <img style="width: 6.7vw;" src="imgs/inter.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/Athletico pr.jpg" > <h3>X</h3> <img style="width: 6.1vw;" src="imgs/coritiba.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="JogosBahia">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.2vw;" src="imgs/bahia.jpg" > <h3>X</h3> <img style="width: 6.6vw;" src="imgs/Botafogo.jpg">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width: 6.2vw;" src="imgs/bahia.jpg" > <h3>X</h3> <img src="imgs/vasco.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>14.09.2023 - 20:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.2vw;" src="imgs/bahia.jpg" > <h3>X</h3> <img style="width: 6.1vw;" src="imgs/coritiba.jpg">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>18.09.2023 - 20:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.2vw;" src="imgs/bahia.jpg" > <h3>X</h3> <img style="width: 5.8vw;" src="imgs/santos.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img style="width: 6.2vw;" src="imgs/bahia.jpg" > <h3>X</h3> <img style="width: 5.9vw;" src="imgs/flamengo.png">
+                </div>
+            </div>
+        </div>
+        <div class="JogosBotafogo">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.6vw;" src="imgs/Botafogo.jpg" > <h3>X</h3> <img style="width: 6.2vw;" src="imgs/bahia.jpg">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>SUDAMERICANA</h3>
+                <h3>30.08.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.6vw;" src="imgs/Botafogo.jpg" > <h3>X</h3> <img style="width: 5.9vw;" src="imgs/DefensaYJusticia.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>02.09.2023 - 21:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.6vw;" src="imgs/Botafogo.jpg" > <h3>X</h3> <img style="width: 5.9vw;" src="imgs/flamengo.png">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>16.09.2023 - 21:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.6vw;" src="imgs/Botafogo.jpg" > <h3>X</h3> <img src="imgs/Atletico.jpg">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>20.09.2023 - 12:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.6vw;" src="imgs/Botafogo.jpg" > <h3>X</h3> <img style="width: 6vw;" src="imgs/goias.png">
+                </div>
+            </div>
+        </div>
+        <div class="JogosBragantino">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 11:00</h3>
+                <div class="confronto">
+                    <img style="width: 8vw;" src="imgs/bragantino.png" > <h3>X</h3> <img src="imgs/cuiaba.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width: 8vw;" src="imgs/bragantino.png" > <h3>X</h3> <img style="width: 6vw;" src="imgs/cruzeiro.webp">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>13.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 8vw;" src="imgs/bragantino.png" > <h3>X</h3> <img style="width: 6vw;" src="imgs/gremio.gif">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>19.09.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img style="width: 8vw;" src="imgs/bragantino.png" > <h3>X</h3> <img src="imgs/americaMineiro.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img style="width: 8vw;" src="imgs/bragantino.png" > <h3>X</h3> <img style="width: 6.3vw" src="imgs/palmeiras.webp">
+                </div>
+            </div>
+        </div>
+        <div class="JogosCorinthians">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>26.08.2023 - 21:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.5vw;" src="imgs/corinthians.jpg" > <h3>X</h3> <img style="width: 6vw;" src="imgs/goias.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>SUDAMERICANA</h3>
+                <h3>29.08.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img style="width: 6.5vw;" src="imgs/corinthians.jpg" > <h3>X</h3> <img src="imgs/Estudiantes.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.5vw;" src="imgs/corinthians.jpg" > <h3>X</h3> <img style="width:6.3vw" src="imgs/palmeiras.webp">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>13.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.5vw;" src="imgs/corinthians.jpg" > <h3>X</h3> <img style="width: 5.3vw;" src="imgs/fortaleza.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>20.09.2023 - 12:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.5vw;" src="imgs/corinthians.jpg" > <h3>X</h3> <img style="width: 5.7vw;" src="imgs/saoPaulo.png">
+                </div>
+            </div>
+        </div>
+        <div class="JogosCoritiba">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width: 6.1vw;" src="imgs/coritiba.jpg" > <h3>X</h3> <img style="width: 5.3vw;" src="imgs/fortaleza.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 20:30</h3>
+                <div class="confronto">
+                    <img style="width: 6.1vw;" src="imgs/coritiba.jpg" > <h3>X</h3> <img style="width: 5.7vw;" src="imgs/saoPaulo.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>14.09.2023 - 20:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.1vw;" src="imgs/coritiba.jpg" > <h3>X</h3> <img style="width: 6.2vw;" src="imgs/bahia.jpg">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>19.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.1vw;" src="imgs/coritiba.jpg" > <h3>X</h3> <img src="imgs/vasco.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img style="width: 6.1vw;" src="imgs/coritiba.jpg" > <h3>X</h3> <img style="width: 6vw;" src="imgs/Athletico pr.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="JogosCruzeiro">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/cruzeiro.webp" > <h3>X</h3> <img style="width: 6vw;" src="imgs/gremio.gif">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/cruzeiro.webp" > <h3>X</h3> <img style="width: 8vw;" src="imgs/bragantino.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>13.09.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/cruzeiro.webp" > <h3>X</h3> <img style="width: 5.8vw;" src="imgs/santos.png">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>23.09.2023 - 21:00</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/cruzeiro.webp" > <h3>X</h3> <img style="width: 5.5vw;" src="imgs/fluminense.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/cruzeiro.webp" > <h3>X</h3> <img src="imgs/americaMineiro.png">
+                </div>
+            </div>
+        </div>
+        <div class="JogosCuiaba">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 11:00</h3>
+                <div class="confronto">
+                    <img src="imgs/cuiaba.png" > <h3>X</h3> <img style="width: 8vw;" src="imgs/bragantino.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 11:00</h3>
+                <div class="confronto">
+                    <img src="imgs/cuiaba.png" > <h3>X</h3> <img style="width: 6vw;" src="imgs/gremio.gif">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>15.09.2023 - 20:00</h3>
+                <div class="confronto">
+                    <img src="imgs/cuiaba.png" > <h3>X</h3> <img src="imgs/americaMineiro.png">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>21.09.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img src="imgs/cuiaba.png" > <h3>X</h3> <img src="imgs/Atletico.jpg">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img src="imgs/cuiaba.png" > <h3>X</h3> <img style="width: 5.5vw;" src="imgs/fluminense.png">
+                </div>
+            </div>
+        </div>
+        <div class="JogosFlamengo">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>26.08.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width: 5.9vw;" src="imgs/flamengo.png" > <h3>X</h3> <img style="width: 6.7vw;" src="imgs/inter.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>02.09.2023 - 21:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.9vw;" src="imgs/flamengo.png" > <h3>X</h3> <img style="width: 6.6vw;" src="imgs/Botafogo.jpg">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>SUDAMERICANA</h3>
+                <h3>13.09.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img style="width: 5.9vw;" src="imgs/flamengo.png" > <h3>X</h3> <img style="width: 6vw;" src="imgs/Athletico pr.jpg">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>20.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.9vw;" src="imgs/flamengo.png" > <h3>X</h3> <img style="width: 6vw;" src="imgs/goias.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img style="width: 5.9vw;" src="imgs/flamengo.png" > <h3>X</h3> <img style="width: 6.2vw;" src="imgs/bahia.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="JogosFluminense">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width: 5.5vw;" src="imgs/fluminense.png" > <h3>X</h3> <img style="width: 6vw;" src="imgs/Athletico pr.jpg">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>LIBERTADORES</h3>
+                <h3>31.08.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img style="width: 5.5vw;" src="imgs/fluminense.png" > <h3>X</h3> <img style="width: 6.4vw;" src="imgs/Olimpia.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.5vw;" src="imgs/fluminense.png" > <h3>X</h3> <img style="width: 5.3vw;" src="imgs/fortaleza.png">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>16.09.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.5vw;" src="imgs/fluminense.png" > <h3>X</h3> <img src="imgs/vasco.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>23.09.2023 - 21:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.5vw;" src="imgs/fluminense.png" > <h3>X</h3> <img style="width: 6vw;" src="imgs/cruzeiro.webp">
+                </div>
+            </div>
+        </div>
+        <div class="JogosFortaleza">
+            <div class="jogo1">
+                <h3>SUDAMERICANA</h3>
+                <h3>24.08.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.3vw;" src="imgs/fortaleza.png" > <h3>X</h3> <img src="imgs/americaMineiro.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width: 5.3vw;" src="imgs/fortaleza.png" > <h3>X</h3> <img style="width: 6.1vw;" src="imgs/coritiba.jpg">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>SUDAMERICANA</h3>
+                <h3>31.08.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.3vw;" src="imgs/fortaleza.png" > <h3>X</h3> <img src="imgs/americaMineiro.png">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.3vw;" src="imgs/fortaleza.png" > <h3>X</h3> <img style="width: 5.5vw;" src="imgs/fluminense.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>13.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.3vw;" src="imgs/fortaleza.png" > <h3>X</h3> <img style="width: 6.5vw;" src="imgs/corinthians.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="JogosGoias">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>26.08.2023 - 21:00</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/goias.png" > <h3>X</h3> <img style="width: 6.5vw;" src="imgs/corinthians.jpg">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>02.09.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/goias.png" > <h3>X</h3> <img style="width: 6.7vw;" src="imgs/inter.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>15.09.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/goias.png" > <h3>X</h3> <img style="width:6.3vw" src="imgs/palmeiras.webp">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>20.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/goias.png" > <h3>X</h3> <img style="width: 5.9vw;" src="imgs/flamengo.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/goias.png" > <h3>X</h3> <img style="width: 6.6vw;" src="imgs/Botafogo.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="JogosGremio">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/gremio.gif" > <h3>X</h3> <img style="width: 6vw;" src="imgs/cruzeiro.webp">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 11:00</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/gremio.gif" > <h3>X</h3> <img src="imgs/cuiaba.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>13.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/gremio.gif" > <h3>X</h3> <img style="width: 8vw;" src="imgs/bragantino.png">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>20.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/gremio.gif" > <h3>X</h3> <img style="width:6.3vw" src="imgs/palmeiras.webp">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img style="width: 6vw;" src="imgs/gremio.gif" > <h3>X</h3> <img style="width: 5.3vw;" src="imgs/fortaleza.png">
+                </div>
+            </div>
+        </div>
+        <div class="JogosInter">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>26.08.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width: 6.7vw;" src="imgs/inter.png" > <h3>X</h3> <img style="width: 5.9vw;" src="imgs/flamengo.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>LIBERTADORES</h3>
+                <h3>29.08.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.7vw;" src="imgs/inter.png" > <h3>X</h3> <img src="imgs/Bolivar.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>02.09.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.7vw;" src="imgs/inter.png" > <h3>X</h3> <img style="width: 6vw;" src="imgs/goias.png">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>13.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 6.7vw;" src="imgs/inter.png" > <h3>X</h3> <img style="width: 5.7vw;" src="imgs/saoPaulo.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>21.09.2023 - 19:30</h3>
+                <div class="confronto">
+                    <img style="width: 6.7vw;" src="imgs/inter.png" > <h3>X</h3> <img style="width: 6vw;" src="imgs/Athletico pr.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="JogosPalmeiras">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width:6.3vw" src="imgs/palmeiras.webp" > <h3>X</h3> <img src="imgs/vasco.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>LIBERTADORES</h3>
+                <h3>30.08.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img style="width:6.3vw" src="imgs/palmeiras.webp" > <h3>X</h3> <img style="width: 6vw;" src="imgs/deportivoPereira.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width:6.3vw" src="imgs/palmeiras.webp" > <h3>X</h3> <img style="width: 6.5vw;" src="imgs/corinthians.jpg">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>15.09.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img style="width:6.3vw" src="imgs/palmeiras.webp" > <h3>X</h3> <img style="width: 6vw;" src="imgs/goias.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>20.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width:6.3vw" src="imgs/palmeiras.webp" > <h3>X</h3> <img style="width: 6vw;" src="imgs/gremio.gif">
+                </div>
+            </div>
+        </div>
+        <div class="JogosSantos">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.8vw;" src="imgs/santos.png" > <h3>X</h3> <img src="imgs/Atletico.jpg">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img style="width: 5.8vw;" src="imgs/santos.png" > <h3>X</h3> <img src="imgs/americaMineiro.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>13.09.2023 - 21:30</h3>
+                <div class="confronto">
+                    <img style="width: 5.8vw;" src="imgs/santos.png" > <h3>X</h3> <img style="width: 6vw;" src="imgs/cruzeiro.webp">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>18.09.2023 - 20:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.8vw;" src="imgs/santos.png" > <h3>X</h3> <img style="width: 6.2vw;" src="imgs/bahia.jpg">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img style="width: 5.8vw;" src="imgs/santos.png" > <h3>X</h3> <img src="imgs/vasco.png">
+                </div>
+            </div>
+        </div>
+        <div class="JogosSaoPaulo">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.7vw;" src="imgs/saoPaulo.png" > <h3>X</h3> <img src="imgs/americaMineiro.png">
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>SUDAMERICANA</h3>
+                <h3>31.08.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.7vw;" src="imgs/saoPaulo.png" > <h3>X</h3> <img style="width: 6.3vw;" src="imgs/lduQuito.png">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 20:30</h3>
+                <div class="confronto">
+                    <img style="width: 5.7vw;" src="imgs/saoPaulo.png" > <h3>X</h3> <img style="width: 6.1vw;" src="imgs/coritiba.jpg">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>13.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.7vw;" src="imgs/saoPaulo.png" > <h3>X</h3> <img style="width: 6.7vw;" src="imgs/inter.png">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>20.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img style="width: 5.7vw;" src="imgs/saoPaulo.png" > <h3>X</h3> <img style="width: 5.3vw;" src="imgs/fortaleza.png">
+                </div>
+            </div>
+        </div>
+        <div class="JogosVasco">
+            <div class="jogo1">
+                <h3>BRASILEIRÃO</h3>
+                <h3>27.08.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img src="imgs/vasco.png" > <h3>X</h3> <img src="imgs/palmeiras.webp" style="width: 6.3vw" >
+                </div>
+            </div>
+            <div class="jogo2">
+                <h3>BRASILEIRÃO</h3>
+                <h3>03.09.2023 - 18:30</h3>
+                <div class="confronto">
+                    <img src="imgs/vasco.png" > <h3>X</h3> <img style="width: 6.2vw;" src="imgs/bahia.jpg">
+                </div>
+            </div>
+            <div class="jogo3">
+                <h3>BRASILEIRÃO</h3>
+                <h3>16.09.2023 - 16:00</h3>
+                <div class="confronto">
+                    <img src="imgs/vasco.png" > <h3>X</h3> <img style="width: 5.5vw;" src="imgs/fluminense.png">
+                </div>
+            </div>
+            <div class="jogo4">
+                <h3>BRASILEIRÃO</h3>
+                <h3>19.09.2023 - 19:00</h3>
+                <div class="confronto">
+                    <img src="imgs/vasco.png" > <h3>X</h3> <img style="width: 6.1vw;" src="imgs/coritiba.jpg">
+                </div>
+            </div>
+            <div class="jogo5">
+                <h3>BRASILEIRÃO</h3>
+                <h3>30.09.2023 - A confirmar</h3>
+                <div class="confronto">
+                    <img src="imgs/vasco.png" > <h3>X</h3> <img style="width: 5.8vw;" src="imgs/santos.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footerPP">
+        <p>ndbnews@gmail.com</p>
+        <br>
+        <p>Avenida São João,Vila Joana - Jundiaí,SP - 13216000</p>
+        <div class="redessociais">
+            <a id="twittericon" href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+            <a id="instagramicon" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a id="facebookicon" href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

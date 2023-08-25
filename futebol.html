@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400&display=swap');
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NDBNEWS</title>
+        <script src="https://kit.fontawesome.com/f6df8b84c1.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body>
+        <div class= "cabecalho">
+            <ul id="menufut" class="menuSanduiche">
+                <li><a class="menuItem" href="index.html">Home</a></li>
+                <li><a class="menuItem" href="futebol.html"></i>Futebol</a></li>
+                <li><a class="menuItem" href="basquete.html">Basquete</a></li>
+                <li><a class="menuItem" href="formula1.html">Fórmula 1</a></li>
+                <li><a class="menuItem" href="calendario.html">Calendário</a></li>
+            </ul>
+            <button id="hamburgerfut" class="hamburger" onclick="toggleMenu()">
+                <i id="menu" class="fa-solid fa-bars"></i>
+                <i id="x" class="fa-solid fa-x"></i>
+            </button>
+            <div class="logocabecalho">
+                <a href="index.html"><img src="imgs/logoverdefut.png" alt="Logo do site com texto NDB News."></a>
+            </div>
+            <div class="botoes">
+                <i id="userfutebol" class="fa-solid fa-user"></i>
+            </div>
+        </div>
+        <p class="fundoMenu">.</p>
+        <div class="fundobotaopesquisa">
+            <div class="botaopesquisa">
+                <i id="pesquisalogo" class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisa...">
+            </div>
+        </div>
+        <div class="conteudofutebol">
+            <div id="destaquesDOFUT">
+                <h2 id="h2">Destaques da Rodada</h2>
+                <div id="fotosdosdestaquesDOFUT">
+                    <div id="athletico">
+                        <img id="vitor" src="imgs/vitorroque.png" alt="Jogador de futebol com camisa do Athletico.">
+                        <figcaption><b>VITOR ROQUE</b></figcaption>
+                    </div>
+                    <div id="bragantino">
+                        <img id="sasha" src="imgs/sasha.png" alt="Jogador de futebol com camisa do Bragantino.">
+                        <figcaption><b>EDUARDO SASHA</b></figcaption>
+                    </div>
+                    <div id="cuiaba">
+                        <img id="deyverson" src="imgs/deyverson.png" alt="Jogador de futebol com camisa do Cuiabá.">
+                        <figcaption><b>DEYVERSON</b></figcaption>
+                    </div>
+                    <div id="flamengo">
+                        <img id="arrascaeta" src="imgs/arrascaeta.png" alt="Jogador de futebol com camisa do Flamengo.">
+                        <figcaption><b>ARRASCAETA</b></figcaption>
+                    </div>
+                </div>
+            </div>
+            <div class="tabeladofutebol">
+                    <img class="tabelabrasileiro" src="imgs/tabelafut.jpg" ALT="Tabela do campeonato brasileiro 2023.">
+            </div>
+            <div class="noticiafut">
+                <div class="noticialuan">
+                    <img id="luan" src="imgs/VAIIIIluan.webp" alt="Jogador de futebol utilizando a camiseta do Esporte Clube  Corinthians Paulista">
+                    <div class="textonoticia">
+                        <h5>TORCIDA DO CORINTHIANS AGRIDE LUAN</h5>
+                        <figcaption>Jogador Luan do Corinthians é buscado em motel por torcida da fiel e é agredido até concordar em rescindir com o clube.</figcaption>
+                    </div>
+                </div>
+                <hr>
+                <div class="noticialuxemburgo">
+                    <img id="luan" src="imgs/Luxemburgo.webp" alt="Técnico do time de futebol Corinthians com casaco preto.">
+                    <div class="textonoticia">
+                        <h5>CORINTHIANS PODE DEMITIR LUXEMBURGO CASO PERCA NO SÁBADO</h5>
+                        <figcaption> Com o corinthians em má fase, os torcedores esperam alguma reação da diretoria e Luxemburgo pode sair do comando.</figcaption>
+                    </div>
+                </div>
+                <hr>
+                <div class="noticiaSergio">
+                    <img id="luan" src="imgs/Sergio rochet.webp" alt="Jogador de futebol, em um estádio com camisa vermelha.">
+                    <div class="textonoticia">
+                        <h5>INTERNACIONAL MIRA A CONTRATAÇÃO DE GOLEIRO URUGUAIO</h5>
+                        <figcaption>Recentemente o goleiro uruguaio Sergio Rochet, do Nacional, recebeu sondagem do Internacional, que já encaminha proposta.</figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footerfut" class="footerPP">
+            <p>ndbnews@gmail.com</p>
+            <br>
+            <p>Avenida São João,Vila Joana - Jundiaí,SP - 13216000</p>
+            <div class="redessociais">
+                <a id="twittericon" href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a>                    
+                <a id="instagramicon" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a id="facebookicon" href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>

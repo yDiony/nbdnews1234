@@ -1,0 +1,1969 @@
+body::-webkit-scrollbar{
+    width:1.3vw;
+    height:3vh;
+}
+body::-webkit-scrollbar-button{
+    background-color:none !important;
+    width:3vw;
+    height:0;
+}
+body::-webkit-scrollbar-track-piece {
+    background-color:#E7E7E7;
+}
+body::-webkit-scrollbar-thumb:vertical{
+    height:3vh;
+    background-color: #B3B3B3;
+    border-left: 1vw solid #B3B3B3;
+    border-right: 1vh solid #B3B3B3;
+}
+body::-webkit-scrollbar-thumb:horizontal{
+    width:2vw;
+    background-color:#B3B3B3;
+}
+body::-webkit-scrollbar-button:vertical:increment {background-image:none !important;}
+body::-webkit-scrollbar-button:vertical:decrement {background-image:none !important;}
+.cabecalho{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+}
+#userbasquete{
+    color: #FF7A00;
+    font-size: 2.5vw;
+    background-color: black;
+    border-radius: 100%;
+    width: 4vw;
+    margin-left: 11vw;
+    height: 4vw;
+    justify-content: center;
+    display: flex;
+    line-height: 3.5vw;
+}
+#userf1{
+    color: #ff0000;
+    font-size: 2.5vw;
+    background-color: black;
+    border-radius: 100%;
+    width: 4vw;
+    margin-left: 11vw;
+    height: 4vw;
+    justify-content: center;
+    display: flex;
+    line-height: 3.5vw;
+}
+#userfutebol{
+    color: rgb(15, 209, 80);
+    font-size: 2.5vw;
+    background-color: black;
+    border-radius: 100%;
+    width: 4vw;
+    margin-left: 11vw;
+    height: 4vw;
+    justify-content: center;
+    display: flex;
+    line-height: 3.5vw;
+}
+.logocabecalho{
+    height: 16vh;
+    justify-content: center;
+    display: flex;
+    margin-top: 1vh;
+}
+.logocabecalho img{
+    width: 8vw;
+    display: flex;
+    height: 16vh;
+}
+.botaocadastro{
+    margin-right: 1vw;
+}
+#botoesprincipal a{
+    color: rgb(1, 196, 245);
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2vw;
+    width: 15vw;
+}
+.botoes button{
+    padding: 2vh;
+    border-radius: 1vh;
+    background-color: rgb(253, 253, 253);
+}
+.botoes a{
+    color: rgb(15, 209, 80);
+
+}
+button{
+    border: none;
+}
+button{
+    border: none;
+}
+body{
+    font-family: Geologica;
+    overflow-x: hidden;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.conteudo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+.noticias{
+    font-family: Geologica;
+    width: 55vw;
+    height: 87.8vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.principaisnoticias{
+    font-family: Geologica;
+    width: 55vw;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.principaisnoticias h3{
+    margin-top: 0;
+}
+.noticias img{
+    width: 52vw;
+    border-color: black ;
+    border: 0.5vh solid;
+}
+.noticias figcaption{
+    font-family: Geologica;
+    position: absolute;
+    margin-top: -12vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px black;
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0.644);
+
+}
+.luiscastro, .danielricciardo{
+    display: inline-block;
+    position: relative;
+}
+.imagemJames{
+    display: inline-block;
+    position: relative;
+}
+.noticias::-webkit-scrollbar{
+    width:1.3vw;
+    height:3vh;
+}
+.noticias::-webkit-scrollbar-button{
+    background-color:none !important;
+    width:3vw;
+    height:0;
+}
+.noticias::-webkit-scrollbar-track-piece {
+    background-color:#E7E7E7;
+    -webkit-border-radius:1vh;
+}
+.noticias::-webkit-scrollbar-thumb:vertical{
+    height:3vh;
+    background-color:#B3B3B3;
+    -webkit-border-radius:1vh;
+    border-left: 1vw solid #B3B3B3;
+    border-right: 1vh solid #B3B3B3;
+}
+.noticias::-webkit-scrollbar-thumb:horizontal{
+    width:2vw;
+    background-color:#B3B3B3;
+    -webkit-border-radius:1vh;
+}
+.noticias::-webkit-scrollbar-button:vertical:increment {background-image:none !important;}
+.noticias::-webkit-scrollbar-button:vertical:decrement {background-image:none !important;}
+.botaopesquisa{
+    font-family: Geologica;
+    border-radius: 2vw;
+    background-color: white;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 15vw;
+    display: block;
+    justify-self: end;
+    margin-top: 2vh;
+    border: solid rgb(15, 209, 80);
+    float: right;
+    margin-right: 2vw;
+}
+.botaopesquisa ::-webkit-input-placeholder {
+    color:  rgb(15, 209, 80);
+}
+#botaopesquisaprincipal ::-webkit-input-placeholder {
+    color:  rgb(1, 196, 245);
+}
+#botaopesquisabasquete ::-webkit-input-placeholder {
+    color:  #FF7A00;
+}
+#botaopesquisaf1 ::-webkit-input-placeholder {
+    color:  #ff0000;
+}
+#botaopesquisaprincipal{
+    border: solid rgb(1, 196, 245);
+    justify-content: center;
+}
+#pesquisalogobasquete{
+    color: #FF7A00;
+    width: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#pesquisalogoprincipal{
+    color: rgb(1, 196, 245);
+    width: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#pesquisalogof1{
+    color: #ff0000;
+    width: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#botaopesquisaf1{
+    border: solid #ff0000;
+    justify-content: center;
+}
+#botaopesquisabasquete{
+    border: solid #FF7A00;
+    justify-content: center;
+}
+.botaopesquisa input{
+    font-family: Geologica;
+    outline: none;
+    border: none;
+    background-color: white;
+    width: 10vw;
+    color: solid rgb(15, 209, 80);
+
+}
+#pesquisalogo{
+    width: 1vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    color: rgb(15, 209, 80);
+}
+.menulateralprincipal{
+    font-family: Geologica;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin-left: 5vw;
+    width: 25vw;
+}
+.menulateralprincipal h3{
+    margin-top: 0;
+}
+
+.noticiaslateral::-webkit-scrollbar{
+    width:1.3vw;
+    height:3vh;
+}
+.noticiaslateral::-webkit-scrollbar-button{
+    background-color:none !important;
+    width:3vw;
+    height:0;
+}
+.noticiaslateral::-webkit-scrollbar-track-piece {
+    background-color:#E7E7E7;
+    -webkit-border-radius:1vh;
+}
+.noticiaslateral::-webkit-scrollbar-thumb:vertical{
+    height:3vh;
+    background-color:#B3B3B3;
+    -webkit-border-radius:1vh;
+    border-left: 1vw solid #b3b3b3;
+    border-right: 1vh solid #b3b3b3;
+}
+.noticiaslateral::-webkit-scrollbar-thumb:horizontal{
+    width:2vw;
+    background-color:#B3B3B3;
+    -webkit-border-radius:1vh;
+}
+.noticiaslateral::-webkit-scrollbar-button:vertical:increment {background-image:none !important;}
+.noticiaslateral::-webkit-scrollbar-button:vertical:decrement {background-image:none !important;}
+.noticiaslateral{
+    font-family: Geologica;
+    width: 28vw;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    height: 87.8vh;
+    direction: rtl;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: -2.5vw;
+}
+.noticiaslateral img{
+    width: 25vw;
+    border-color: black ;
+    border: 0.5vh solid;
+}
+.noticiaslateral figcaption{
+    font-family: Geologica;
+    width: 25.3vw;
+    position: absolute;
+    margin-top: -11vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 100px black ;
+    font-size: 1.7vw;
+}
+.nikolaVocevic figcaption{
+    margin-top: -13vh;
+}
+.Hamilton{
+    position: relative;
+    display: inline-block;
+}
+.nikolaVocevic{
+    position: relative;
+    display: inline-block;
+}
+.Havertz{
+    position: relative;
+    display: inline-block;
+}
+.noticiaslateral h4{
+    margin-top: 0;
+}
+.footerPP{
+    font-family: Geologica;
+    background-color: black;
+    width: 100%;
+    display: block;
+    position: relative;
+    bottom: -5vh;
+    margin-top: 13vh;
+    color: rgb(1, 196, 245);
+    float: inline-end;
+    margin-top: 10vh;
+}
+.footerPP p{
+    margin-right: 1vh;
+}
+.footerPP i{
+    margin-right: 2vw;
+}
+.redessociais{
+    justify-content: end;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 10vh;
+}
+.redessociais i{
+    font-size: 2vw;
+    margin-bottom: 3vh;
+    margin-right: 4vw;
+}
+.fundo{
+    background-image:url(imgs/back-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+}
+.card{
+    background-color: #d9d9d9;
+    padding-top: 0;
+    padding-bottom: 2vh;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+.logo{
+    background-color: black;
+    width: 30vw;
+    height: 10vh;
+    justify-content: center;
+    display: flex;
+}
+.logo img{
+    width: 8vw;
+    height: 14vh;
+    margin-top: -1vh;
+}
+.fazerlogin{
+    font-family: Geologica;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    height: 7vh;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    color: rgb(1, 196, 245);
+}
+.fazerlogin:hover{
+    font-family: Geologica;
+    cursor: pointer;
+}
+.login{
+    font-family: Geologica;
+    margin:0;
+    width: fit-content;
+    margin: auto;
+}
+.login input{
+    font-family: Geologica;
+    border: none;
+    outline: none;
+    margin-top: 5vh;
+    width: 20vw;
+    height: 7vh;
+    border-radius: 1vw;
+    padding-left: 1vw;
+}
+.senha{
+    font-family: Geologica;
+    margin-bottom: 5vh;
+}
+.cadastro{
+    font-family: Geologica;
+    margin:0;
+    width: fit-content;
+    margin: auto;
+}
+.fazercadastro{
+    color: rgb(1, 196, 245);
+    font-family: Geologica;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    height: 7vh;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+}
+.fazercadastro a{
+    color: rgb(1, 196, 245);
+}
+.fazercadastro:hover{
+    font-family: Geologica;
+    cursor: pointer;
+}
+.cadastro input{
+    font-family: Geologica;
+    border: none;
+    outline: none;
+    margin-top: 5vh;
+    width: 20vw;
+    height: 7vh;
+    border-radius: 1vw;
+    padding-left: 1vw;
+}
+@media(max-width:780px){
+    .logo{
+        background-color: #ff0000;
+        width: 30vw;
+        height: 10vh;
+        justify-content: center;
+        display: flex;
+    }
+    .login input{
+        font-family: Geologica;
+        border: none;
+        outline: none;
+        margin-top: 4vh;
+        width: 25vw;
+        height: 7vh;
+        border-radius: 1vw;
+        padding-left: 1vw;
+    }
+    .fazerlogin{
+        font-family: Geologica;
+        background-color: #ff0000;
+        margin: auto;
+        display: flex;
+        height: 7vh;
+        width: 25vw;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5vw;
+    }
+    .cadastro input{
+        font-family: Geologica;
+        border: none;
+        outline: none;
+        margin-top: 4vh;
+        width: 25vw;
+        height: 7vh;
+        border-radius: 1vw;
+        padding-left: 1vw;
+    }
+    .fazercadastro{
+        font-family: Geologica;
+        background-color: #ff0000;
+        margin: auto;
+        display: flex;
+        height: 7vh;
+        width: 25vw;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5vw;
+    }
+    .logo img{
+        width: 10vw;
+        height: 14vh;
+        margin-top: -1vh;
+    }
+}
+@media (max-width: 630px){
+    .fundo{
+        background-image: url(imgs/fundo-celular.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        display: flex;
+        background-position: center;
+    }
+    .card{
+        background-color: #d9d9d9;
+        padding-bottom: 2vh;
+        justify-content: center;
+        width: fit-content;
+        margin: auto;
+    }
+    .noticiaf1 figcaption{
+        margin-left: 2vw;
+    }
+    .logo{
+        background-color: #ff0000;
+        width: 50vw;
+        height: 10vh;
+        justify-content: center;
+        display: flex;
+    }
+    .login input{
+        font-family: Geologica;
+        border: none;
+        outline: none;
+        margin-top: 4vh;
+        width: 30vw;
+        height: 7vh;
+        border-radius: 1vw;
+        padding-left: 1vw;
+    }
+    .logo img{
+        width: 13vw;
+        height: 14vh;
+        margin-top: -1vh;
+    }
+    .fazerlogin{
+        font-family: Geologica;
+        background-color: #ff0000;
+        margin: auto;
+        display: flex;
+        height: 7vh;
+        width: 30vw;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5vw;
+    }
+    .fazerlogin:hover{
+        font-family: Geologica;
+        cursor: pointer;
+    }
+    .cadastro input{
+        font-family: Geologica;
+        border: none;
+        outline: none;
+        margin-top: 4vh;
+        width: 30vw;
+        height: 7vh;
+        border-radius: 1vw;
+        padding-left: 1vw;
+    }
+    .fazercadastro{
+        font-family: Geologica;
+        background-color: #ff0000;
+        margin: auto;
+        display: flex;
+        height: 7vh;
+        width: 30vw;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5vw;
+    }
+    .fazercadastro:hover{
+        font-family: Geologica;
+        cursor: pointer;
+    }
+}
+@media (max-width:400px){
+    .logo img{
+        width: 22vw;
+        height: 15vh;
+        margin-top: -2vh;
+    }
+    .fazercadastro{
+        font-family: Geologica;
+        width: 40vw;
+        background-color: #ff0000;
+        margin: auto;
+        display: flex;
+        height: 7vh;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7vw;
+        font-size: 3vw;
+    }
+    .cadastro input{
+        font-family: Geologica;
+        border: none;
+        outline: none;
+        margin-top: 4vh;
+        width: 40vw;
+        height: 7vh;
+        border-radius: 1vw;
+        padding-left: 2vw;
+        font-size: medium;
+    }
+    .logo{
+        background-color: #ff0000;
+        width: 55vw;
+        height: 10vh;
+        justify-content: center;
+        display: flex;
+    }
+}
+.principaisbasquete{
+    height: 60vh;
+    margin-top: 10vh;
+    display: flex;
+}
+.noticiasbasquete{
+    display: inline-flexbox;
+    font-family: Geologica;
+    width: 58vw;
+    height: 76vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 4vw;
+}
+.noticiasbasquete figcaption{
+    width: 55vw;
+    margin-top: -12vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 5px 5px black !important;
+    font-size: 2vw;
+    margin-left: 1.5vw;
+    width: 54vw;
+}
+.noticiasbasquete img{
+    margin-bottom: 1.5vh;
+    width: 55vw;
+    border: 0.5vw solid black;
+}
+.noticiasbasquete::-webkit-scrollbar{
+    width:1.3vw;
+    height:3vh;
+}
+.noticiasbasquete::-webkit-scrollbar-button{
+    background-color:none !important;
+    width:3vw;
+    height:0;
+}
+.noticiasbasquete::-webkit-scrollbar-track-piece {
+    background-color:#E7E7E7;
+    -webkit-border-radius: 1vh;
+}
+.noticiasbasquete::-webkit-scrollbar-thumb:vertical{
+    height:3vh;
+    background-color:#B3B3B3;
+    -webkit-border-radius:1vh;
+    border-left: 1vw solid #b3b3b3;
+    border-right: 1vh solid #b3b3b3;
+}
+.noticiasbasquete::-webkit-scrollbar-thumb:horizontal{
+    width:2vw;
+    background-color:#B3B3B3;
+    -webkit-border-radius:1vh;
+}
+.noticiasbasquete::-webkit-scrollbar-button:vertical:increment {background-image:none !important;}
+.noticiasbasquete::-webkit-scrollbar-button:vertical:decrement {background-image:none !important;}
+.fotonoticiasbasquete{
+    display: flex;
+}
+.destaquesbasquete{
+    font-family: Geologica;
+    margin-top: 4px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.destaquesbasquete img{
+    width: 9vw;
+    height: 9vw;
+}
+.destaquesbasquetetotal{
+    margin-top: 20vh;
+}
+h5{
+    font-family: Geologica;
+    font-size: 2vw;
+    display: block;
+    text-align: center;
+}
+.menulateralbasquete{
+    width: 30vw;
+    border: solid 0.5vw;
+    border-image: linear-gradient(to right, #4395ff, #fffb12, #f00808) 1;
+    float: right;
+    margin-left: 3.75vw;
+}
+#botaopesquisabasquete{
+    justify-content: center;
+}
+#footerbasquete{
+    margin-top: 0vh;
+    color: #FF7A00;
+}
+#footerbasquete i{
+    color: #FF7A00;
+}
+.principaisf1{
+    height: 60vh;
+    margin-top: 10vh;
+    display: flex;
+}
+.noticiaf1{
+    display: inline-flexbox;
+    font-family: Geologica;
+    width: 58vw;
+    height: 76vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 4vw;
+}
+.noticiaf1 figcaption{
+    width: 55vw;
+    margin-top: -12vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 5px 5px black !important;
+    font-size: 2vw;
+    margin-left: 1.5vw;
+    width: 54vw;
+}
+.noticiaf1 img{
+    margin-bottom: 1.5vh;
+    width: 55vw;
+    border: 0.5vw solid black;
+}
+.noticiaf1::-webkit-scrollbar{
+    width:1.3vw;
+    height:3vh;
+}
+.noticiaf1::-webkit-scrollbar-button{
+    background-color:none !important;
+    width:3vw;
+    height:0;
+}
+.noticiaf1::-webkit-scrollbar-track-piece {
+    background-color:#E7E7E7;
+    -webkit-border-radius:1vh;
+}
+.noticiaf1::-webkit-scrollbar-thumb:vertical{
+    height:3vh;
+    background-color:#B3B3B3;
+    -webkit-border-radius:1vh;
+    border-left: 1vw solid #b3b3b3;
+    border-right: 1vh solid #b3b3b3;
+}
+.noticiaf1::-webkit-scrollbar-thumb:horizontal{
+    width:2vw;
+    background-color:#B3B3B3;
+    -webkit-border-radius:1vh;
+}
+.noticiaf1::-webkit-scrollbar-button:vertical:increment {background-image:none !important;}
+.noticiaf1::-webkit-scrollbar-button:vertical:decrement {background-image:none !important;}
+.fotonoticiaf1{
+    display: flex;
+}
+.destaquesf1{
+    font-family: Geologica;
+    margin-top: 4px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.destaquesf1 img{
+    width: 9vw;
+    height: 9vw;
+}
+.destaquesf1total{
+    margin-top: 20vh;
+}
+h5{
+    font-family: Geologica;
+    font-size: 2vw;
+    display: block;
+    text-align: center;
+}
+.menulateralf1{
+    width: 30vw;
+    border: solid 0.5vw;
+    border-image: linear-gradient(to right, #4395ff, #fffb12, #f00808) 1;
+    float: right;
+    margin-left: 3.75vw;
+}
+#botaopesquisaf1{
+    justify-content: center;
+}
+#footerf1{
+    margin-top: 0;
+    color: #ff0000;
+}
+#footerf1 i{
+    color: #ff0000;
+}
+.tabelabrasileiro{
+    width: 30vw;
+    border: solid 0.5vw;
+    border-image: linear-gradient(to right, #4395ff, #fffb12, #f00808) 1;
+    float: right;
+    margin-right: 2vw;
+}
+#sasha {
+    width: 6vw;
+
+}
+#deyverson{
+    width: 6vw;
+
+
+}
+#arrascaeta{
+    width: 6vw;
+
+}
+#vitor {
+    width: 6vw;
+}
+#destaquesDOFUT{
+    display: flex;
+    width: 55vw;
+    height: 20vh;
+    margin-left: 2vw;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    border:  solid 0.5vw;
+    border-image: linear-gradient(to right, #4395ff, #fffb12, #f00808) 1;
+    float: left;
+}
+#athletico{
+    width:10vw;
+    font-size: 1vw;
+}
+#bragantino{
+    width:10vw;
+    font-size: 1vw;
+}
+#cuiaba{
+    width:10vw;
+    font-size: 1vw;
+}
+#flamengo{
+    width:10vw;
+    font-size: 1vw;
+}
+#luan{
+    overflow-x: hidden;
+    float: left;
+    display: flex;
+    border: #000000 solid 0.2vw;
+}
+.noticiafut{
+    margin-top: 5vw;
+    margin-left: 2vw;
+    float: left;
+    display: block;
+    width: 56vw;
+    height: 45vh;
+    overflow-y: scroll;
+    margin-bottom: 5vh;
+}
+.noticialuan{
+    display: flex;
+}
+.noticialuan img{
+    width: 25vw;
+    height: 9vw;
+}
+.noticialuxemburgo{
+    margin-top: 1vh;
+    display: flex;
+}
+.noticialuxemburgo img{
+    width: 25vw;
+    height: 9vw;
+}
+.noticiaSergio{
+    margin-top: 1vh;
+    display: flex;
+}
+.noticiaSergio img{
+    width: 26.5vw;
+    height: 9vw;
+}
+.noticiafut h5{
+    font-size: 1.5vw;
+    width: 31vw;
+    text-align: left;
+    margin-top: 0;
+}
+.noticiafut::-webkit-scrollbar{
+    width:1.3vw; height:3vh;
+}
+.noticiafut::-webkit-scrollbar-button{
+    background-color:none !important; width:3vw; height:0;
+}
+.noticiafut::-webkit-scrollbar-track-piece {
+    background-color:#E7E7E7;
+    -webkit-border-radius:1vh;
+}
+.noticiafut::-webkit-scrollbar-thumb:vertical{
+    height:3vh; background-color:#B3B3B3;
+    -webkit-border-radius:1vh;
+}
+.noticiafut{
+    margin-top: 5vw;
+    margin-left: 2vw;
+    float: left;
+}
+ #h2 {
+    margin: 0;
+}
+#fotosdosdestaquesDOFUT{
+    display: flex;
+}
+#destaquesDOFUT img{
+    border: antiquewhite solid 0.3vw;
+    border-radius: 100%;
+}
+.conteudofutebol{
+    display: block;
+    margin-top: 5vw;
+}
+.textonoticia{
+    display: block;
+    margin-left: 1vw;
+}
+#footerfut{
+    margin-top: 85vh;
+    color: rgb(15, 209, 80);
+}
+#footerfut i{
+    color: rgb(15, 209, 80);
+}
+@media (max-width:325px){
+    .menulateralprincipal{
+        margin-top: 0 !important;
+    }
+    .destaquesf1total{
+        margin-top: -70vh !important;
+    }
+    .noticiaf1 figcaption {
+        margin-top: -7vh !important;
+    }
+    #footerf1{
+        margin-top: -15vh !important;
+    }
+    .destaquesbasquetetotal{
+        margin-top: -70vh !important;
+    }
+    .noticiabasquete figcaption{
+        margin-top: -7vh !important;
+    }
+    #footerbasquete{
+        margin-top: -15vh !important;
+    }
+}
+@media (max-width: 450px){
+    .logocabecalho{
+        display: flex;
+    }
+    .logocabecalho img{
+        width: 15vw;
+    }
+    .cabecalho{
+        justify-content: space-around;
+        height: 12vh;
+    }
+    .conteudo{
+        display: block;
+        overflow-y: hidden;
+    }
+    .noticias{
+        font-family: Geologica;
+        width: 95vw;
+        margin-right: 0;
+    }
+    .principaisnoticias{
+        font-family: Geologica;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-left: 3vw;
+        width: 90vw;
+        height: 65vh;
+    }
+    .imagemJames{
+        width: 90vw;
+    }
+    .imagemJames figcaption{
+        margin-left: 15%;
+        margin-top: -3vh;
+    }
+    .luiscastro{
+        width: 90vw;
+    }
+    .luiscastro figcaption{
+        margin-left: 15%;
+        margin-top: -3vh;
+    }
+    .danielricciardo{
+        width: 90vw;
+    }
+    .danielricciardo figcaption{
+        margin-left: 15%;
+        margin-top: -3vh;
+    }
+    .noticias img{
+        width: 90vw;
+    }
+    .menulateralprincipal{
+        font-family: Geologica;
+        display: block;
+        float: none;
+        text-align: center;
+        background-color: #000000;
+        width: 90vw;
+        border: rgb(1, 196, 245) solid 0.5vw;
+        height: 22vh;
+        margin-top: 16vh;
+    }
+    .menulateralprincipal h3{
+        margin-top: 0;
+    }
+    .noticiaslateral img{
+        border: rgb(1, 196, 245) solid 0.5vw;
+        border-radius: 1vw;
+        width: 15vw;
+    }
+    .menubaixo{
+        width: 90vw;
+        display: flex;
+        text-align: center;
+    }   
+    .noticiaslateral{
+        display: flex;
+        justify-content: space-between;
+        height: 15vh;
+        width: 92vw;
+        overflow-y: hidden;
+    }
+    .noticiaslateral figcaption{
+        width: 20vw;
+        margin-top: -10vh;
+        margin-right: 0.5vw;
+        border-bottom-left-radius: 1vw;
+        border-bottom-right-radius: 1vw;
+    }
+    .nikolaVocevic{
+        margin-left: 4vw;
+    }
+    .Hamilton{
+        margin-right: 2vw;
+    }
+    .Havertz figcaption{
+        width: 20vw!important;
+        margin-top: -5vh!important;
+    }
+    .nikolaVocevic figcaption{
+        width: 20vw!important;
+        margin-top: -5vh!important;
+    }
+    .Hamilton figcaption{
+        width: 20vw!important;
+        margin-top: -5vh!important;
+    }
+    .noticiaslateral img{
+        width: 22vw;
+        height: 15vh;
+    }
+    #botoesprincipais{
+        display: flex;
+        margin-right: 4vw;
+    }
+    .botaopesquisa{
+        width: 100%;
+        float: none;
+        margin-top: 0;
+        margin-bottom: 5vh;
+        margin-left: 0;
+        margin-right: none;
+    }
+    .botaopesquisa input{
+        width: 15vw;
+    }
+    .f{
+        background-color: #000000;
+        justify-content: center;
+        margin-top: 0;
+        display: flex;
+        width: 96vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .logocabecalho {
+        margin-left: 2vw;
+    }
+    .botoes a{
+        font-size: 2vw;
+    }
+    .footerPP{
+        margin-top: 0;
+    }
+    .principaisf1{
+        height: 86vh;
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-around;
+    }
+    .noticiaf1{
+        margin-left: 0;
+        float: left;
+        font-family: Geologica;
+        width: 58vw;
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .noticiaf1 figcaption{
+        width: 55vw;
+        margin-top: -7vh;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px black;
+        font-size: 2vw;
+        margin-left: 1.7vw;
+    }
+    .noticiaf1 img {
+        margin-bottom: 4vh !important;
+    }
+    .menulateralf1{
+        margin-left: 0;
+        width: 30vw;
+        border: solid 0.5vw;
+        border-image: linear-gradient(to right, #4395ff, #fffb12, #f00808) 1;
+        float: right;
+        overflow-y: none;
+    }
+    .tabela{
+        overflow-y: none;
+        height: 28vh;
+        width: 32vw;
+    }
+    h5{
+        margin-top: 0vw;
+        font-size: 5vw;
+        font-family: Geologica;
+        width: 32vw;
+    }
+    .destaquesf1total{
+        margin-bottom: 5vh;
+        float: right;
+        height: 55vh;
+        width: 34vw;
+        margin-top: -65vh;
+        text-align: center;
+        font-size: 4vw;
+    }
+    .destaquesf1{
+        height: 50vh;
+        width: 34vw;
+        margin-top: -8vw;
+        font-family: Geologica;
+    }
+    .destaquesf1 figcaption{
+        font-size: 2vw;
+        text-align: center;
+    }
+    .destaquesf1 img{
+        width: 20vw;
+        height: 20vw;
+    }
+    #footerf1{
+        margin-top: 5vh;
+    }
+    #botaopesquisabasquete input{
+        width: 80vw;
+    }
+    .principaisbasquete{
+        height: 86vh;
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-around;
+    }
+    .noticiasbasquete{
+        margin-left: 0;
+        float: left;
+        font-family: Geologica;
+        width: 58vw;
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .noticiasbasquete figcaption{
+        width: 55vw;
+        margin-top: -7vh;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px black;
+        font-size: 2vw;
+        margin-left: 1.7vw;
+    }
+    .noticiasbasquete img{
+        margin-bottom: 4vh !important;
+    }
+    .menulateralbasquete{
+        margin-left: 0;
+        width: 30vw;
+        border: solid 0.5vw;
+        border-image: linear-gradient(to right, #4395ff, #fffb12, #f00808) 1;
+        float: right;
+        overflow-y: none;
+    }
+    .destaquesbasquetetotal{
+        margin-bottom: 5vh;
+        float: right;
+        height: 55vh;
+        width: 34vw;
+        margin-top: -65vh;
+        text-align: center;
+        font-size: 4vw;
+    }
+    .destaquesbasquete{
+        height: 50vh;
+        width: 34vw;
+        margin-top: -8vw;
+        font-family: Geologica;
+    }
+    .destaquesbasquete figcaption{
+        font-size: 2vw;
+        text-align: center;
+    }
+    .destaquesbasquete img{
+        width: 20vw;
+        height: 20vw;
+    }
+    #footerbasquete{
+        margin-top: 5vh;
+    }
+    .conteudofutebol{
+        margin-top: 2vh;
+        display: inline-block;
+        align-items: center;
+    }
+    #destaquesDOFUT{
+        height: 18vh;
+        width: 95vw;
+        display: block;
+    }
+    #destaquesDOFUT h2{
+        font-size: 5vw;
+        margin-top: 1vh;
+    }
+    #fotosdosdestaquesDOFUT{
+        justify-content: space-around;
+        margin-right: 0px;
+        height: 8vh;
+        margin-top: 3vh;
+        width: 90vw;
+    }
+    #fotosdosdestaquesDOFUT img{
+        width: 10vw;
+        height: 10vw;
+    }
+    #fotosdosdestaquesDOFUT figcaption{
+        font-size: 1.5vw;
+    }
+    .tabelabrasileiro{
+        width: 95vw;
+        margin-top: 3vh;
+        margin-left: 2vw;
+        justify-content: center;
+        text-align: center;
+    }
+    .noticiafut{
+        margin-top: 5vh;
+        overflow-y: hidden;
+        width: 95vw;
+        height: 50vh;
+        margin-left: 2vw;
+    }
+    .noticiafut img{
+        width: 30vw;
+        height: 34vw;
+        vertical-align: middle;
+    }
+    .textonoticia{
+        float: right;
+        width: 70vw;
+        display: block;
+        margin-left: 3vw;
+    }
+    .noticialuan{
+        justify-content: space-between;
+    }
+    .noticiaSergio{
+        justify-content: space-between;
+    }
+    .noticialuxemburgo{
+        justify-content: space-between;
+    }
+    .slider{
+        display: none;
+    }
+    .slides{
+        display: none;
+    }
+    .slides img{
+        display: none;
+    }
+    .menuSanduiche{
+        width: 100%;
+    }
+    .redessociais i{
+        font-size: 6vw;
+    }
+    #menu{
+        font-size: 12vw;
+        margin-top: -5vh;
+    }
+    #menu i{
+        margin-top: -1vh;
+    }
+    .botoes{
+        margin-top: 4.5vh;
+        margin-right: -4vw;
+    }
+    .botoes button{
+        padding: 2vw;
+    }
+    .botoes{
+        margin-top: -1vh;
+    }
+    #userfutebol{
+        font-size: 14vw;
+    }
+    #userbasquete{
+        font-size: 14vw;
+    }
+    #userf1{
+        font-size: 14vw;
+    }
+    .logocabecalho img{
+        width: 22vw;
+        height: 10vh;
+    }
+    #footerfut{
+        margin-top: 0;
+    }
+}
+@media (max-height:450px){
+    .noticiaf1 figcaption{
+        width: 55vw;
+        margin-top: -8vh;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px black;
+        font-size: 2vw;
+        margin-left: 1.7vw;
+    }
+    .destaquesf1total{
+        margin-bottom: 5vh;
+        float: right;
+        height: 80vh;
+        width: 34vw;
+        margin-top: -40vh;
+        text-align: center;
+        display: block;
+    }
+    .destaquesf1{
+        height: 80vh;
+        width: 34vw;
+        margin-top: -4vw;
+        font-family: Geologica;
+        display: block;
+    }
+    .destaquesf1 figcaption{
+        font-size: 2vw;
+        text-align: center;
+    }
+    .destaquesf1 img{
+        width: 20vw;
+        height: 20vw;
+    }
+    .principaisbasquete{
+        margin-top: 10vh;
+        display: flex;
+    }
+    .noticiasbasquete{
+        font-family: Geologica;
+        width: 58vw;
+        height: 76vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-left: 4vw;
+    }
+    .noticiasbasquete figcaption{
+        width: 55vw;
+        margin-top: -12vh;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px black;
+        font-size: 2vw;
+        margin-left: 1vw;
+    }
+    .noticiasbasquete img{
+        width: 55vw;
+        border: 0.5vw solid black;
+    }
+}
+@media (max-width:775px){
+    /* .destaquesf1total{
+        margin-top: 20vh;
+    } */
+    .noticiaf1 figcaption{
+        margin-top: -8vh;
+    }
+    .noticiaf1 img{
+        margin-bottom: 2vh;
+    }
+    .principaisf1{
+        margin-top: 5vh;
+    }
+    .noticiabasquete figcaption{
+        margin-top: -8vh;
+    }
+    .noticiabasquete img{
+        margin-bottom: 2vh;
+    }
+    .principaisbasquete{
+        margin-top: 5vh;
+    }
+}
+/* @media (max-width:1024px){
+    .destaquesf1total{
+        margin-top: 20vh;
+    }
+} */
+
+/* @media (max-width: 800px){
+    #destaquesDOFUT h2{
+        margin: 0;
+        font-size: 3vw;
+    }
+    #destaquesDOFUT img{
+        width: 4vw;
+    }
+    .textonoticia{
+        margin-left: 2vw;
+    }
+    .noticiafut img{
+        height: 20vh;
+        width: 60vw;
+    }
+} */
+@media (max-height: 400px){
+    #destaquesDOFUT h2{
+        margin: 0;
+        font-size: 2vw;
+    }
+    #destaquesDOFUT img{
+        width: 4vw;
+    }
+}
+
+/* @media (max-width: 600px){
+    #botaopesquisabasquete input{
+        width: 80vw;
+    }
+    .principaisbasquete{
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-around;
+    }
+    .noticiasbasquete{
+        margin-left: 0;
+        float: left;
+        font-family: Geologica;
+        width: 58vw;
+        height: 200vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .noticiasbasquete figcaption{
+        width: 55vw;
+        margin-top: -6vh;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px black;
+        font-size: 2vw;
+        margin-left: 1.7vw;
+    }
+    .menulateralbasquete{
+        margin-left: 0;
+        width: 30vw;
+        border: solid 0.5vw;
+        border-image: linear-gradient(to right, #4395ff, #fffb12, #f00808) 1;
+        float: right;
+        overflow-y: none;
+    }
+    .tabela{
+        overflow-y: none;
+        height: 28vh;
+        width: 32vw;
+    }
+    h5{
+        margin-top: 0vw;
+        font-size: 3.25vw;
+        font-family: Geologica;
+        width: 32vw;
+    }
+    .destaquesbasquetetotal{
+        margin-bottom: 5vh;
+        float: right;
+        height: 80vh;
+        width: 34vw;
+        margin-top: -152vh;
+        text-align: center;
+        justify-items: center;
+        display: block;
+    }
+    .destaquesbasquete{
+        height: 80vh;
+        width: 34vw;
+        margin-top: -4vw;
+        font-family: Geologica;
+        display: block;
+    }
+    .destaquesbasquete figcaption{
+        font-size: 2vw;
+        text-align: center;
+        justify-items: center;
+    }
+    .destaquesbasquete img{
+        width: 20vw;
+        height: 20vw;
+    }
+} */
+/* @media (max-height:550px){
+    .noticiasbasquete figcaption{
+        width: 55vw;
+        margin-top: -8vh;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px black;
+        font-size: 2vw;
+        margin-left: 1.7vw;
+    }
+}
+@media (max-height:400px){
+    .noticiasbasquete figcaption{
+        width: 55vw;
+        margin-top: -13vh;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px black;
+        font-size: 2vw;
+        margin-left: 1.7vw;
+    }
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: rgb(1, 196, 245);
+    text-decoration: none;
+    z-index: 103;
+  }
+.menuItem:hover {
+    text-decoration: underline;
+}
+.hamburger {
+    z-index: 100;
+    height: 17vh;
+    width: 15vw;
+    margin-top: 0;
+    margin-left: 2vw;
+    border: 0;
+    background-color: transparent;
+    color: rgb(1, 196, 245);
+    cursor: pointer;
+}
+#x {
+    position: fixed;
+    margin-top: 2vh;
+    font-size: 2.5vh;
+    display: none;
+}
+#menu{
+    font-size: 5vh;
+    display: flex;
+}
+.menuSanduiche{
+    padding-top: 6vh;
+    position: fixed;
+    color: rgb(1, 196, 245);
+    transform: translatex(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 99;
+    background: black;
+    list-style: none;
+}
+.showMenu {
+    transform: translateY(0);
+}
+.fundoMenu{
+    display: none;
+    position: fixed;
+    opacity: 60%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 98;
+    background-color: #000000;
+}
+.fundobotaopesquisa{
+    background-color: #000000;
+    padding: 0.1vw;
+}
+#menufut a{
+    color: rgb(15, 209, 80);
+}
+#hamburgerfut{
+    color: rgb(15, 209, 80);
+}
+#menuF1 a{
+    color: #ff0000;
+}
+#hamburgerF1{
+    color: #ff0000;
+}
+#menuBasquete a{
+    color: #FF7A00 !important;
+}
+#hamburgerBasquete{
+    color: #FF7A00 !important;
+}
+#userCalender{
+    color: rgb(1, 196, 245);
+    font-size: 2.5vw;
+    background-color: black;
+    border-radius: 100%;
+    width: 4vw;
+    margin-left: 11vw;
+    height: 4vw;
+    justify-content: center;
+    display: flex;
+    line-height: 3.5vw;
+    border: solid rgb(1, 196, 245);
+}
+
+#twittericon {
+    color: rgb(1, 196, 245);
+}
+
+#instagramicon {
+    color: rgb(1, 196, 245);
+}
+
+#facebookicon {
+    color: rgb(1, 196, 245);
+}
+.imgsTimes{
+    margin-left: 7vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    width: 90vw;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .imgsTimes img{
+    height: 5vw;
+    width: 4.7vw;
+    margin-right: 4vw;
+    margin-bottom: 2vw;
+  }
+  .imgsTimes img:hover{
+    cursor: pointer;
+  }
+  .jogos img{
+    width: 5vw;
+  }
+  .jogos h3{
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  .confronto{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+  }
+  .JogosAmerica{
+    display: none;
+  }
+  .JogosAtletico{
+    display: none;
+  }
+  .JogosAthletico{
+    display: none;
+  }
+  .JogosBahia{
+    display: none;
+  }
+  .JogosBotafogo{
+    display: none;
+  }
+  .JogosBragantino{
+    display: none;
+  }
+  .JogosCoritiba{
+    display: none;
+  }
+  .JogosCorinthians{
+    display: none;
+  }
+  .JogosCruzeiro{
+    display: none;
+  }
+  .JogosCuiaba{
+    display: none;
+  }
+  .JogosFlamengo{
+    display: none;
+  }
+  .JogosFluminense{
+    display: none;
+  }
+  .JogosFortaleza{
+    display: none;
+  }
+  .JogosGoias{
+    display: none;
+  }
+  .JogosGremio{
+    display: none;
+  }
+  .JogosInter{
+    display: none;
+  }
+  .JogosPalmeiras{
+    display: none;
+  }
+  .JogosSantos{
+    display: none;
+  }
+  .JogosSaoPaulo{
+    display: none;
+  }
+  .JogosVasco{
+    display: none;
+  }
+  #atleticoLogo{
+    width: 4.5vw;
+  }
+  #fluminenseLogo{
+    width: 4.5vw;
+  }
+  #bragantinoLogo{
+    width: 4.9vw;
+    height: 10.5vh;
+  }
+  #interLogo{
+    width: 4.9vw;
+    height: 10.5vh;
+  }
+.slider{
+    margin: 0 auto;
+    width: 91vw;
+    height: 60vh;
+    overflow: hidden;
+    margin-top: 20vh;
+    justify-content: center;
+    border: 0.2vw solid rgb(1, 196, 245);
+    border-radius: 0.5vw;
+}
+.slides{
+    width: 400%;
+    height: 60vh;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+}
+
+.slide img{
+    width: 100%;
+    height: 180%;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 91vw;
+    margin-top: -10vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 91vw;
+    margin-top: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+@media(max-width:830px){
+    .imgsTimes img{
+      height: 7vw;
+      width: 5vw;
+      margin-right: 4vw;
+      margin-bottom: 2vw;
+    }
+    #interLogo{
+      width: 5vw;
+      height: 7vw;
+    }
+    #bragantinoLogo{
+      width: 5vw;
+      height: 7vw;
+    }
+  }
+  @media(max-width:500px){
+    .imgsTimes img{
+      height: 6vw;
+      width: 5vw;
+    }
+    .footerPP{
+        margin-top: 28vh;
+    }
+    #interLogo{
+      width: 5vw;
+      height: 6vw;
+    }
+    #bragantinoLogo{
+      width: 5vw;
+      height: 6vw;
+    }
+  }
